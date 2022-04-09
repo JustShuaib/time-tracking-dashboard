@@ -13,29 +13,30 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="font-rubik bg-very-dark-blue">
+  <body class="bg-very-dark-blue font-rubik">
     <main
-      class="grid w-9/12 md:w-10/12 my-20 md:mt-20 md:grid-cols-4 gap-6 md:grid-rows-2 mx-auto"
+      class="my-20 mx-auto grid w-9/12 gap-6 md:mt-20 md:w-10/12 md:grid-cols-4 md:grid-rows-2"
     >
       <!-- Info -->
-      <div class="rounded-2xl md:row-span-2 text-pale-blue bg-dark-blue">
+      <div class="rounded-2xl bg-dark-blue text-pale-blue md:row-span-2">
         <div
-          class="w-full rounded-2xl bg-pry-blue p-6 flex items-center lg:flex-col md:items-start md:pb-20"
+          class="flex w-full items-center rounded-2xl bg-pry-blue p-6 md:items-start md:pb-20 lg:flex-col"
         >
           <img
             src="./images/image-jeremy.png"
             alt="avatar"
-            class="w-16 border-2 border-white rounded-full md:mb-6 mr-4"
+            class="mr-4 w-16 rounded-full border-3 border-white md:mb-6"
           />
           <header>
             <p>Report for</p>
-            <h1 class="capitalize text-2xl lg:text-5xl text-white md:mt-2">
+            <h1 class="text-2xl capitalize text-white md:mt-2 lg:text-5xl">
               Jeremy Robson
             </h1>
           </header>
         </div>
         <ul
-          class="px-6 my-5 flex justify-between md:flex-col text-lg md:gap-y-3 text-desaturated-blue"
+          id="duration"
+          class="my-5 flex justify-between px-6 text-lg text-desaturated-blue md:flex-col md:gap-y-3"
         >
           <li><button>Daily</button></li>
           <li class="text-white"><button>Weekly</button></li>
@@ -44,9 +45,8 @@
       </div>
       <!--End of Info -->
       <!-- Work  -->
-      <section class="bg-work bg-['url(./images/icon-ellipsis.svg)']">
+      <section class="bg-work bg-work-img">
         <div>
-          <!-- <img src="./images/icon-work.svg" alt="work" /> -->
           <div>
             <small>
               <h2>Work</h2>
@@ -62,9 +62,8 @@
         </div>
       </section>
       <!-- Play  -->
-      <section class="bg-play">
+      <section class="bg-play bg-play-img">
         <div>
-          <!-- <img src="./images/icon-play.svg" alt="play" /> -->
           <div>
             <small>
               <h2>play</h2>
@@ -80,9 +79,8 @@
         </div>
       </section>
       <!-- Study  -->
-      <section class="bg-study">
+      <section class="bg-study bg-study-img">
         <div>
-          <!-- <img src="./images/icon-study.svg" alt="Study" /> -->
           <div>
             <small>
               <h2>Study</h2>
@@ -98,9 +96,8 @@
         </div>
       </section>
       <!-- Exercise -->
-      <section class="bg-exercise">
+      <section class="bg-exercise bg-exercise-img">
         <div>
-          <!-- <img src="./images/icon-exercise.svg" alt="Exercise" /> -->
           <div>
             <small>
               <h2>Exercise</h2>
@@ -116,9 +113,8 @@
         </div>
       </section>
       <!-- Social -->
-      <section class="bg-social">
+      <section class="bg-social bg-social-img">
         <div>
-          <!-- <img src="./images/icon-social.svg" alt="Social" /> -->
           <div>
             <small>
               <h2>Social</h2>
@@ -134,9 +130,8 @@
         </div>
       </section>
       <!-- Self care -->
-      <section class="bg-self-care">
+      <section class="bg-self-care bg-self-care-img">
         <div>
-          <!-- <img src="./images/icon-self-care.svg" alt="Self care" /> -->
           <div>
             <small>
               <h2>Self care</h2>
