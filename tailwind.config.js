@@ -19,8 +19,16 @@ module.exports = {
         "desaturated-blue": "hsl(235, 45%, 61%)",
         "pale-blue": "hsl(236, 100%, 87%)",
       },
-      spacing: {
+      borderWidth: {
         3: "3px",
+      },
+      backgroundImage: {
+        "work-img": "url('./images/icon-work.svg')",
+        "exercise-img": "url('./images/icon-exercise.svg')",
+        "play-img": "url('./images/icon-play.svg')",
+        "self-care-img": "url('./images/icon-self-care.svg')",
+        "social-img": "url('./images/icon-social.svg')",
+        "study-img": "url('./images/icon-study.svg')",
       },
     },
   },
