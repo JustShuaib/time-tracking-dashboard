@@ -13,20 +13,32 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="font-rubik">
-    <main class="bg-blue-400">
+  <body class="font-rubik bg-very-dark-blue">
+    <main
+      class="grid w-9/12 md:w-10/12 my-20 md:my-28 md:grid-cols-4 gap-y-6 md:gap-x-6 md:grid-rows-2 mx-auto"
+    >
       <!-- Info -->
-      <div>
-        <div>
-          <img src="./images/image-jeremy.png" alt="avatar" />
+      <div class="rounded-2xl md:row-span-2 text-pale-blue bg-dark-blue">
+        <div
+          class="w-full rounded-2xl bg-pry-blue p-6 flex items-center lg:flex-col md:items-start md:pb-28"
+        >
+          <img
+            src="./images/image-jeremy.png"
+            alt="avatar"
+            class="w-16 border-2 border-white rounded-full md:mb-6 mr-4"
+          />
           <header>
             <p>Report for</p>
-            <h1 class="uppercase">Jeremy Robson</h1>
+            <h1 class="capitalize text-2xl lg:text-5xl text-white md:mt-2">
+              Jeremy Robson
+            </h1>
           </header>
         </div>
-        <ul>
+        <ul
+          class="px-6 my-5 flex justify-between md:flex-col text-lg md:gap-y-3 text-desaturated-blue"
+        >
           <li><button>Daily</button></li>
-          <li><button>Weekly</button></li>
+          <li class="text-white"><button>Weekly</button></li>
           <li><button>Monthly</button></li>
         </ul>
       </div>

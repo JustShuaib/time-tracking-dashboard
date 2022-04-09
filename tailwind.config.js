@@ -19,6 +19,9 @@ module.exports = {
         "desaturated-blue": "hsl(235, 45%, 61%)",
         "pale-blue": "hsl(236, 100%, 87%)",
       },
+      spacing: {
+        3: "3px",
+      },
     },
   },
   plugins: [],
