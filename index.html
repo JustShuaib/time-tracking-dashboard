@@ -11,93 +11,147 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Time tracking dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+  <body class="font-rubik bg-very-dark-blue">
+    <main
+      class="grid w-9/12 md:w-10/12 my-20 md:mt-20 md:grid-cols-4 gap-6 md:grid-rows-2 mx-auto"
+    >
+      <!-- Info -->
+      <div class="rounded-2xl md:row-span-2 text-pale-blue bg-dark-blue">
+        <div
+          class="w-full rounded-2xl bg-pry-blue p-6 flex items-center lg:flex-col md:items-start md:pb-20"
+        >
+          <img
+            src="./images/image-jeremy.png"
+            alt="avatar"
+            class="w-16 border-2 border-white rounded-full md:mb-6 mr-4"
+          />
+          <header>
+            <p>Report for</p>
+            <h1 class="capitalize text-2xl lg:text-5xl text-white md:mt-2">
+              Jeremy Robson
+            </h1>
+          </header>
+        </div>
+        <ul
+          class="px-6 my-5 flex justify-between md:flex-col text-lg md:gap-y-3 text-desaturated-blue"
+        >
+          <li><button>Daily</button></li>
+          <li class="text-white"><button>Weekly</button></li>
+          <li><button>Monthly</button></li>
+        </ul>
+      </div>
+      <!--End of Info -->
+      <!-- Work  -->
+      <section class="bg-work bg-['url(./images/icon-ellipsis.svg)']">
+        <div>
+          <!-- <img src="./images/icon-work.svg" alt="work" /> -->
+          <div>
+            <small>
+              <h2>Work</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>32hrs</p>
+              <p>Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Play  -->
+      <section class="bg-play">
+        <div>
+          <!-- <img src="./images/icon-play.svg" alt="play" /> -->
+          <div>
+            <small>
+              <h2>play</h2>
+              <button aria-label="button">
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>10hrs</p>
+              <p>Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Study  -->
+      <section class="bg-study">
+        <div>
+          <!-- <img src="./images/icon-study.svg" alt="Study" /> -->
+          <div>
+            <small>
+              <h2>Study</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>4hrs</p>
+              <p>Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Exercise -->
+      <section class="bg-exercise">
+        <div>
+          <!-- <img src="./images/icon-exercise.svg" alt="Exercise" /> -->
+          <div>
+            <small>
+              <h2>Exercise</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>4hrs</p>
+              <p>Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Social -->
+      <section class="bg-social">
+        <div>
+          <!-- <img src="./images/icon-social.svg" alt="Social" /> -->
+          <div>
+            <small>
+              <h2>Social</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>5hrs</p>
+              <p>Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Self care -->
+      <section class="bg-self-care">
+        <div>
+          <!-- <img src="./images/icon-self-care.svg" alt="Self care" /> -->
+          <div>
+            <small>
+              <h2>Self care</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </small>
+            <div class="time">
+              <p>2hrs</p>
+              <p>Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
