@@ -504,8 +504,13 @@ section > div{
 
 section > div:hover{
   cursor: pointer;
-  --tw-bg-opacity: 1;
-  background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  section > div:hover{
+    --tw-bg-opacity: 1;
+    background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
+  }
 }
 
 small{
@@ -556,6 +561,10 @@ small{
 
 .w-16{
   width: 4rem;
+}
+
+.w-10\/12{
+  width: 83.333333%;
 }
 
 .items-center{
