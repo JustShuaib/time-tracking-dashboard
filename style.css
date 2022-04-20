@@ -551,8 +551,8 @@ small{
   display: grid;
 }
 
-.w-10\/12{
-  width: 83.333333%;
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .w-full{
@@ -561,10 +561,6 @@ small{
 
 .w-16{
   width: 4rem;
-}
-
-.w-11\/12{
-  width: 91.666667%;
 }
 
 .items-center{
@@ -687,23 +683,14 @@ small{
   line-height: 1.25rem;
 }
 
-.text-1\.5xl{
-  font-size: 1.4rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .capitalize{
@@ -773,8 +760,8 @@ small{
     grid-row: span 2 / span 2;
   }
 
-  .lg\:mt-20{
-    margin-top: 5rem;
+  .lg\:mt-24{
+    margin-top: 6rem;
   }
 
   .lg\:mb-6{
