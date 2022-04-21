@@ -1,34 +1,46 @@
-const listGroup = document.querySelectorAll("#duration li");
-const headings = document.querySelectorAll("h2");
-const buttons = document.getElementById("duration");
-buttons.addEventListener("click", (e) => {
+const headings = document.querySelectorAll("h2"),
+  timeDuration = document.querySelectorAll(".time-duration"),
+  currentTime = document.querySelectorAll(".current"),
+  previousTime = document.querySelectorAll(".previous"),
+  btns = document.getElementById("duration");
+
+btns.addEventListener("click", toggleActiveDuration);
+
+function toggleActiveDuration(e) {
+  addActiveClass(e);
+  displayTime(e);
+}
+function addActiveClass(e) {
   const allBtns = [...document.getElementById("duration").children];
   allBtns.forEach((btn) => {
     btn.firstChild.classList.remove("text-white");
   });
   e.target.classList.add("text-white");
-});
+}
 
-async function getDuration() {
-  const data = await fetch("./data.json");
-  const response = await data.json();
-  return response;
+function displayTime(e) {
+  async function getDuration() {
+    const data = await fetch("./data.json");
+    const response = await data.json();
+    for (let i = 0; i < response.length; i++) {
+      const { daily, weekly, monthly } = response[i].timeframes;
+      let selectedTime = e.target.textContent;
+      if (selectedTime === "daily") {
+        populateDOM("Day", daily, i);
+      }
+      if (selectedTime === "weekly") {
+        populateDOM("Week", weekly, i);
+      }
+      if (selectedTime === "monthly") {
+        populateDOM("Month", monthly, i);
+      }
+    }
+  }
+  getDuration();
 }
-getDuration().then((response) => {
-  response.forEach((resObj) => {
-    // console.log(resObj.title);
-    // console.log(resObj.timeframes);
-    // console.log(resObj);
-  });
-});
-/* listGroup.forEach((btn) => {
-  btn.addEventListener("click", displayDuration);
-});
-function displayDuration(e) {
-  listGroup.forEach((list) => {
-    list.classList.remove("text-white");
-  });
-  e.target.classList.add("text-white");
-  console.log(`You clicked ${e.target.textContent}`);
+
+function populateDOM(duration, durationType, curr) {
+  timeDuration[curr].textContent = duration;
+  currentTime[curr].textContent = durationType.current;
+  previousTime[curr].textContent = durationType.previous;
 }
- */

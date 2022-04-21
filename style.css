@@ -472,6 +472,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 ul li button{
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 ul li button:hover{
