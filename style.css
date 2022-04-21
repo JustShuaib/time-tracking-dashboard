@@ -514,7 +514,7 @@ section > div:hover{
   }
 }
 
-section.heading{
+.heading{
   display: flex;
   align-items: center;
   justify-content: space-between;
