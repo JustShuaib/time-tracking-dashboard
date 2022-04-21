@@ -17,5 +17,6 @@
 .vscode
 node_modules
 src
-build.css
 package-lock.json
+package.json
+*.config.js

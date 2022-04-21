@@ -20,20 +20,21 @@ function addActiveClass(e) {
 
 function displayTime(e) {
   async function getDuration() {
-    const data = await fetch("./data.json");
-    const response = await data.json();
-    for (let i = 0; i < response.length; i++) {
-      const { daily, weekly, monthly } = response[i].timeframes;
-      let selectedTime = e.target.textContent;
-      if (selectedTime === "daily") {
-        populateDOM("Day", daily, i);
+    try {
+      const controller = new AbortController(),
+        signal = controller.signal;
+      const data = await fetch("./data.json", { signal }),
+        response = await data.json();
+      if (!data.ok) controller.abort();
+      for (let i = 0; i < response.length; i++) {
+        const { daily, weekly, monthly } = response[i].timeframes;
+        let selectedTime = e.target.textContent;
+        if (selectedTime === "daily") populateDOM("Yesterday", daily, i);
+        if (selectedTime === "weekly") populateDOM("Last Week", weekly, i);
+        if (selectedTime === "monthly") populateDOM("Last Month", monthly, i);
       }
-      if (selectedTime === "weekly") {
-        populateDOM("Week", weekly, i);
-      }
-      if (selectedTime === "monthly") {
-        populateDOM("Month", monthly, i);
-      }
+    } catch (err) {
+      console.error(`${err.name} : ${err.message}`);
     }
   }
   getDuration();
