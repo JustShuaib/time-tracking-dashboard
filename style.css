@@ -480,7 +480,7 @@ ul li button:hover{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-section{
+.wrapper{
   overflow: hidden;
   border-radius: 1rem;
   background-position: right top;
@@ -488,7 +488,7 @@ section{
   padding-top: 3rem;
 }
 
-section > div{
+.wrapper > div{
   height: 100%;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -503,12 +503,12 @@ section > div{
   transition-duration: 150ms;
 }
 
-section > div:hover{
+.wrapper > div:hover{
   cursor: pointer;
 }
 
 @media (min-width: 1024px){
-  section > div:hover{
+  .wrapper > div:hover{
     --tw-bg-opacity: 1;
     background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
   }
