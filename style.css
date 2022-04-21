@@ -24,7 +24,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -42,9 +42,11 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -81,7 +83,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -125,7 +127,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -214,9 +217,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -263,7 +266,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -348,14 +351,16 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -403,7 +408,6 @@ embed,
 object {
   display: block;
   /* 1 */
-  vertical-align: middle;
   /* 2 */
 }
 
@@ -425,7 +429,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after{
+*,
+::before,
+::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -433,16 +439,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -450,37 +456,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
-ul li button{
+ul li button {
   cursor: pointer;
   text-transform: capitalize;
 }
 
-ul li button:hover{
+ul li button:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-section{
+section {
   overflow: hidden;
   border-radius: 1rem;
   background-position: right top;
@@ -488,7 +494,7 @@ section{
   padding-top: 3rem;
 }
 
-section > div{
+section > div {
   height: 100%;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -496,25 +502,31 @@ section > div{
   padding: 1.5rem;
   --tw-text-opacity: 1;
   color: hsl(236 100% 87% / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke,
+    opacity, box-shadow, transform, filter, -webkit-text-decoration-color,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-section > div:hover{
+section > div:hover {
   cursor: pointer;
 }
 
-@media (min-width: 1024px){
-  section > div:hover{
+@media (min-width: 1024px) {
+  section > div:hover {
     --tw-bg-opacity: 1;
     background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
   }
 }
 
-small{
+small {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -525,279 +537,279 @@ small{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.my-20{
+.my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.mx-auto{
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-5{
+.my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.mr-4{
+.mr-4 {
   margin-right: 1rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
-.w-11\/12{
+.w-11\/12 {
   width: 91.666667%;
 }
 
-.w-full{
+.w-full {
   width: 100%;
 }
 
-.w-16{
+.w-16 {
   width: 4rem;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 
-.gap-6{
+.gap-6 {
   gap: 1.5rem;
 }
 
-.rounded-2xl{
+.rounded-2xl {
   border-radius: 1rem;
 }
 
-.rounded-full{
+.rounded-full {
   border-radius: 9999px;
 }
 
-.border-3{
+.border-3 {
   border-width: 3px;
 }
 
-.border-white{
+.border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-very-dark-blue{
+.bg-very-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(226 43% 10% / var(--tw-bg-opacity));
 }
 
-.bg-dark-blue{
+.bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(235 46% 20% / var(--tw-bg-opacity));
 }
 
-.bg-pry-blue{
+.bg-pry-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
 }
 
-.bg-work{
+.bg-work {
   --tw-bg-opacity: 1;
   background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
 }
 
-.bg-play{
+.bg-play {
   --tw-bg-opacity: 1;
   background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
 }
 
-.bg-study{
+.bg-study {
   --tw-bg-opacity: 1;
   background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
 }
 
-.bg-exercise{
+.bg-exercise {
   --tw-bg-opacity: 1;
   background-color: hsl(145 58% 55% / var(--tw-bg-opacity));
 }
 
-.bg-social{
+.bg-social {
   --tw-bg-opacity: 1;
   background-color: hsl(264 64% 52% / var(--tw-bg-opacity));
 }
 
-.bg-self-care{
+.bg-self-care {
   --tw-bg-opacity: 1;
   background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
 }
 
-.bg-work-img{
-  background-image: url('./images/icon-work.svg');
+.bg-work-img {
+  background-image: url("./images/icon-work.svg");
 }
 
-.bg-play-img{
-  background-image: url('./images/icon-play.svg');
+.bg-play-img {
+  background-image: url("./images/icon-play.svg");
 }
 
-.bg-study-img{
-  background-image: url('./images/icon-study.svg');
+.bg-study-img {
+  background-image: url("./images/icon-study.svg");
 }
 
-.bg-exercise-img{
-  background-image: url('./images/icon-exercise.svg');
+.bg-exercise-img {
+  background-image: url("./images/icon-exercise.svg");
 }
 
-.bg-social-img{
-  background-image: url('./images/icon-social.svg');
+.bg-social-img {
+  background-image: url("./images/icon-social.svg");
 }
 
-.bg-self-care-img{
-  background-image: url('./images/icon-self-care.svg');
+.bg-self-care-img {
+  background-image: url("./images/icon-self-care.svg");
 }
 
-.p-6{
+.p-6 {
   padding: 1.5rem;
 }
 
-.px-6{
+.px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.pr-0{
+.pr-0 {
   padding-right: 0px;
 }
 
-.font-rubik{
+.font-rubik {
   font-family: Rubik, sans-serif;
 }
 
-.text-sm{
+.text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-2xl{
+.text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-lg{
+.text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.capitalize{
+.capitalize {
   text-transform: capitalize;
 }
 
-.text-pale-blue{
+.text-pale-blue {
   --tw-text-opacity: 1;
   color: hsl(236 100% 87% / var(--tw-text-opacity));
 }
 
-.text-white{
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-desaturated-blue{
+.text-desaturated-blue {
   --tw-text-opacity: 1;
   color: hsl(235 45% 61% / var(--tw-text-opacity));
 }
 
-.time{
+.time {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-@media (min-width: 1024px){
-  .time{
+@media (min-width: 1024px) {
+  .time {
     flex-direction: column;
   }
 
-  .time{
+  .time {
     align-items: flex-start;
   }
 
-  .time{
+  .time {
     justify-content: flex-start;
   }
 }
 
-.time > p:first-child{
+.time > p:first-child {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-@media (min-width: 1024px){
-  .time > p:first-child{
+@media (min-width: 1024px) {
+  .time > p:first-child {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
-@media (min-width: 640px){
-  .sm\:grid-cols-2{
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:text-base{
+  .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width: 1024px){
-  .lg\:row-span-2{
+@media (min-width: 1024px) {
+  .lg\:row-span-2 {
     grid-row: span 2 / span 2;
   }
 
-  .lg\:mt-24{
+  .lg\:mt-24 {
     margin-top: 6rem;
   }
 
-  .lg\:mb-6{
+  .lg\:mb-6 {
     margin-bottom: 1.5rem;
   }
 
-  .lg\:mt-2{
+  .lg\:mt-2 {
     margin-top: 0.5rem;
   }
 
-  .lg\:grid-cols-4{
+  .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-rows-2{
+  .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:flex-col{
+  .lg\:flex-col {
     flex-direction: column;
   }
 
-  .lg\:items-start{
+  .lg\:items-start {
     align-items: flex-start;
   }
 
-  .lg\:gap-y-3{
+  .lg\:gap-y-3 {
     row-gap: 0.75rem;
   }
 
-  .lg\:pb-20{
+  .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
-  .lg\:text-5xl{
+  .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
